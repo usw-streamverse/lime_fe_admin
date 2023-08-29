@@ -1,10 +1,13 @@
 import React from 'react'
 import "./Sidebar.scss"
-import { SpaceDashboard,Group,OndemandVideo,DataThresholding,Settings,MoreHoriz} from '@mui/icons-material';
-import { Link } from 'react-router-dom';
+import { SpaceDashboard,Group,OndemandVideo,DataThresholding,Settings,MoreHoriz, DarkMode} from '@mui/icons-material';
+import { Link, useActionData } from 'react-router-dom';
+import { useContext } from 'react';
+import { DarkModeContext } from '../../context/darkModeContext';
 
 
 const Sidebar = () => {
+  const { dispatch } = useContext(DarkModeContext);
   return (
     <div className='sidebar'>
       <div className='top'>
@@ -51,8 +54,11 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className='bottom'>
-        <div className="colorOption"></div>
-        <div className="colorOption"></div>
+        <div className="colorOption" 
+        onClick={() => dispatch({ type: "LIGHT" })}
+        ></div>
+        <div className="colorOption"
+        onClick={() => dispatch({ type: "DARK" })}></div>
       </div>
 
     </div>
