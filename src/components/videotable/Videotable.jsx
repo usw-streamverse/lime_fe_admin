@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import "./videotable.scss";
+import "./Videotable.scss";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -9,7 +9,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-const List = () => {
+const Videotable = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -52,4 +52,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default Videotable

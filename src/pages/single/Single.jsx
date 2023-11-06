@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/Navbar'
 import "./Single.scss"
 import Chart from '../../components/chart/Chart'
 import Table from '../../components/table/Table'
+import User11 from '../../components/user11/User11'
 
 const Single = () => {
   return (
@@ -48,7 +49,9 @@ const Single = () => {
       <h1 className="title">user video</h1>
       <div className="bottom"></div>
       
-        <Table/>
+        {/* <Table/> */}
+        {/* <Oneusertable/> */}
+        <User11/>
       </div>
     </div>
   )

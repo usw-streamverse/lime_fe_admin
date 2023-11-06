@@ -6,6 +6,7 @@ import Widget from '../../components/widget/Widget'
 import Featured from '../../components/featured/Featured'
 import Chart from '../../components/chart/Chart'
 import Table from '../../components/table/Table'
+import Datatableu from '../../components/datatableu/DatatableUser'
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
             </div>
             <div className="charts">
           <Featured />
+          <Datatableu/>
           <Chart aspect={2/1}/>
         </div>
         <div className="listcontainer">
